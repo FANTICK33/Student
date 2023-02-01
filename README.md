@@ -1,13 +1,13 @@
 # Student
 ## __Репозиторий для обучающихся.__
-### __Знакомство с языком программирования С#__
+### __Знакомство с языком программирования С#___
 ### __Содержание:__
 * __HomeWork001_more_and_less__
 * __HomeWork002_maximum_from_three__
 * __HomeWork003_is_the_number_even__
 * __HomeWork004_even_numbers_from_1_to_N__
 
-## __HomeWork_more_and_less__
+## __HomeWork001_more_and_less__
 Программа, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
 __Пример:__
