@@ -8,5 +8,4 @@ Console.Write("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 int Second = IsSecond(number);
-
-Console.WriteLine($"{Second} - второе цифра, из числа {number}");
+Console.WriteLine($"{Second} - вторая цифра, из числа - {number}");
