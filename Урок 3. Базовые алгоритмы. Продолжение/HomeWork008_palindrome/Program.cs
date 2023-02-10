@@ -5,6 +5,6 @@
             return false;
     return true;
 }
-Console.Write("Ввидите число: ");
+Console.Write("Ввeдите число: ");
 string Number = Console.ReadLine();
 System.Console.WriteLine(Palindrom(Number));
