@@ -1,4 +1,4 @@
-# Student
+# __Student__
 ## __Функции.__
 ### __Содержание:__
 * __HomeWork011Degree__
