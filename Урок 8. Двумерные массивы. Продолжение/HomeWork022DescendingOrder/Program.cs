@@ -10,7 +10,8 @@
             Array[i,j] = (new Random().NextDouble()* 2 - 1) * 10; //Заполнение случайными вещественными числами.
     return Array;
 }
-int DescendingOrder(double[,] Array)
+
+double[,] DescendingOrder(double[,] Array) //Метод сортировки двумерного массива в порядке убывания.
 {
     for (int i = 0; i < Array.GetLength(0); i++) // перечисление строк
     {
@@ -22,30 +23,33 @@ int DescendingOrder(double[,] Array)
                 {
                     if(Array[i,j] > Array[k,w])
                     {
-                        int Element = Array[i,j]
-
+                        double Element = Array[i,j];
+                        Array[i,j] = Array[k,w];
+                        Array[k,w] = Element;
                     }
                 }
             }
         }
     }
-    return MaxElement;
+    return Array;
 }
-
 
 void ShowArray(double[,] Array) //Вывод двумерного массива в консоль.
 {
+    Console.WriteLine("");
     int rows = Array.GetUpperBound(0) + 1;
     int columns = Array.GetUpperBound(1) + 1;
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < columns; j++)
             Console.Write($"{Math.Round(Array[i, j],1)} \t");
-        Console.WriteLine();
+        Console.WriteLine("");
     }
 }
 
 // Вызов методов.
 double[,] TwoDimensionalArray = CreateTwoDimensionalArray();
 ShowArray(TwoDimensionalArray);
-Console.WriteLine(DescendingOrder(TwoDimensionalArray));
+
+double[,] DescendingOrderArray = DescendingOrder(TwoDimensionalArray);
+ShowArray(DescendingOrderArray);
