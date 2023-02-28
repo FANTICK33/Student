@@ -14,5 +14,5 @@ Console.Write("Input number M: ");
 int M = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input number N: ");
 int N = Convert.ToInt32(Console.ReadLine());
-int sum = RecursionOfNaturalNumbers(M, N);
+int sum = NaturalNumbers(M, N);
 Console.WriteLine(sum);
