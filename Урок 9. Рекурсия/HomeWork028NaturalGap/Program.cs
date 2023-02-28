@@ -1,4 +1,4 @@
-﻿int RecursionOfNaturalNumbers(int M, int N)
+﻿int NaturalNumbers(int M, int N)
 {
     int Sum = 0;
     if (M < N)
